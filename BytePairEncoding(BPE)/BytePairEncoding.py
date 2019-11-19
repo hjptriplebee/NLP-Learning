@@ -38,7 +38,7 @@ if __name__ == "__main__":
     for i in range(num_merges):
         pairs = get_status(vocabs)
         # print(pairs)
-        best = max(pairs, key=pairs.get) # choose pair with max count
-        print(best)
+        best = max(pairs, key=pairs.get) # choose paisssr with max count
+        print("best pairs:", best)
         vocabs = merge_vocab(best, vocabs)
         print(vocabs)
